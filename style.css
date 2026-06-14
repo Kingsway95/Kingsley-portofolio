@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0,;
+  box-sizing: border-box;
+}
+body {
+  background-color: #00ff88;
+  font-family: 'Arial', sans-serif;
+  padding: 20px 10px;
+}
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #000000;
+  color: #00ff88;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.98);
+  z-index: 999;
+  padding-top: 80px;
+}
+.mobile-nav a {
+    display: block;
+    color: #00ff88;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+.mobile-nav a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.show {
+  display: block !important;
+}
+.card {
+    background: #ffffff;
+    width: 95%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('kingsley.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #00ff88;
+    margin: 0 auto 25px auto;
+}
+h1 {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 15px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  background: #00ff88;
+  color: #0000000;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px;
+}
+.bio {
+  color: #555555;
+  font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: center;
+}
+.btn {
+  display: block;
+  background: #00ff88;
+  color: #000000;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 12px auto;
+  width: 85%;
+  border: 2px solid #000000;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.btn-secondary {
+  background: #ffffff;
+  border: 2px solid #00ff88;
+  color: #000000;
+}
+.btn:hover {
+  background: #000000;
+  color: #00ff88;
+  transform: scLe(1.05) translateY(-2px);
+  box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+}
+.btn-secondary:hover {
+  background: #00ff88;
+}
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+    color: #000000;
+    text-align: left;
+}
+.service-box {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-left: 5px solid #00ff88;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.service-box:hover {
+    background: #e8ffe8;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+}
+.price {
+    color: #00ff88;
+    font-weight: 900;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+h3 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0 8px 0;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 20px 0;
+}
+.portfolio-item {
+  background: #f0f0f0;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333333;
+  transition: 0.3s;
+}
+.portfolio-item:hover {
+  background: #00ff88;
+  color: #000000;
+  transform: scale(1.05);
+}
+.testimonal {
+  background: #e8ffe8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-style: italic;
+  text-align: left;
+  border-left: 4px solid #00ff88;
+}
+.testimonal-name {
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 10px;
+  color: #00ff88;
+  text-align: right;
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10pc;
+  margin: 8px 0;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, Sans-Serif;
+  transiton: all 0.3s ease;
+  box-sizing: border-box;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #00ff88;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  background-color: #f0fff0;
+}
+all {
+  color: #666666;
+  font-size: 12px;
+}
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+figure.img {
+  border-radius: 50%;
+  border: 3px solid #00ff88;
+}
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666666;
+}
+blockquote {
+  background: #f0f0f0;
+  border-left: 4px solid #00ff88;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+  border-radius: 5px;
+}
+cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+  font-style: normal;
+}
+address {
+  font-style: normal;
+  line-height: 1.0;
+  margin: 15px 0;
+  text-align: left;
+}
+time {
+  font-weight: bold;
+  color: #00ff88;
+}
+.footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 14px;
+    color: #666666;
+    text-align: center;
+}
+hr {
+    border: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+nav a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.dark-mode {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+.dark-mode.card {
+    background: #1a1a1a;
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+}
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode.section-title {
+    color: #00ff88;
+}
+.dark-mode.title, 
+.dark-mode.bio, 
+.dark-mode p {
+    color: #cccccc;
+}
+.dark-mode.service-box {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+.dark-mode input, 
+.dark-mode textarea, 
+.dark-mode select {
+    background: #2a2a2a;
+    color: #ffffff;
+    border-color: #444444;
+}
+.dark-mode blockquote {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+.dark-mode.portfolio-item {
+    background: #2a2a2a;
+    color: #ffffff;
+}
+.dark-mode.testimonial {
+    background: #1a2a1a;
+    color: #ffffff;
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+   .card {
+        padding: 20px 15px;
+    }
+   .btn {
+        width: 95%;
+    }
+   .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
